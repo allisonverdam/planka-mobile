@@ -1,34 +1,36 @@
 # Planka Mobile 📱
 
-Um aplicativo móvel de código aberto para o [Planka](https://planka.app/), desenvolvido para trazer a experiência de gestão de projetos Kanban para as palmas das suas mãos!
+*[Leia em Português](README.pt-br.md)*
 
-## 💡 Sobre o Projeto
+An open-source mobile application for [Planka](https://planka.app/), built to bring the Kanban project management experience to the palm of your hands!
 
-Este projeto nasceu da nossa paixão pelo movimento Open Source e pela filosofia do self-hosting. O **Planka** é uma ferramenta incrível e elegante para gerenciar projetos, e decidimos construir este aplicativo móvel para complementar esse ecossistema.
+## 💡 About the Project
 
-Nossa missão é simples: oferecer um aplicativo rápido, bonito e eficiente para usuários do Planka. O mais importante é que **ele é 100% gratuito e open source**. Nós nunca cobraremos pelo uso deste aplicativo, pois acreditamos fortemente na ideia de hospedar as próprias aplicações (self-hosted) e por isso adoramos o que o Planka representa.
+This project was born out of our passion for the Open Source movement and the self-hosting philosophy. **Planka** is an amazing and elegant tool for managing projects, and we decided to build this mobile app to complement its ecosystem.
 
-## 🚀 Disponibilidade nas Lojas
+Our mission is simple: to offer a fast, beautiful, and efficient application for Planka users. The most important thing is that **it is 100% free and open-source**. We will never charge for using this app, as we strongly believe in the idea of self-hosting applications, which is why we love what Planka represents.
 
-A nossa ideia principal é publicar o Planka Mobile oficialmente nas principais lojas de aplicativos em breve:
+## 🚀 Store Availability
+
+Our main goal is to officially publish Planka Mobile in the main app stores soon:
 
 - 📱 **Google Play Store** (Android)
 - 🍎 **Apple App Store** (iOS)
 
-## ❤️ Apoie o Projeto
+## ❤️ Support the Project
 
-Como somos grandes entusiastas do modelo self-hosted e de software livre, nós assumimos o compromisso de manter o Planka Mobile sempre gratuito. No entanto, existem custos reais associados à manutenção do projeto, especialmente as **taxas cobradas para publicar nas lojas de aplicativos** da Apple e do Google.
+As big enthusiasts of the self-hosted and free software model, we are committed to keeping Planka Mobile free forever. However, there are real costs associated with maintaining the project, especially the **fees charged to publish in the app stores** by Apple and Google.
 
-Se este projeto tem sido útil para você ou para a sua empresa e você deseja nos ajudar a pagar essas taxas e mantê-lo nas lojas oficiais, **estamos aceitando doações!** Toda contribuição, não importa o tamanho, é imensamente apreciada e vai direto para os custos do projeto.
+If this project has been useful to you or your company and you wish to help us pay these fees and keep it in the official stores, **we are accepting donations!** Every contribution, no matter the size, is immensely appreciated and goes straight towards the project's costs.
 
 Paypal: https://www.paypal.com/donate/?hosted_button_id=4MFV6KJ2GBRCY
 
 PIX: allisonverdam@gmail.com
 
-## 🛠️ Contribuindo
+## 🛠️ Contributing
 
-Sendo um projeto open source, toda ajuda é muito bem-vinda! Sinta-se à vontade para abrir issues, enviar pull requests ou relatar bugs que encontrar durante o uso.
+Being an open-source project, all help is very welcome! Feel free to open issues, submit pull requests, or report bugs you find while using the app.
 
-## 📝 Licença
+## 📝 License
 
-Este projeto é licenciado nos mesmos moldes dos softwares de código aberto. (Veja o arquivo LICENSE para mais detalhes).
+This project is licensed under the same open-source software terms. (See the LICENSE file for more details).
