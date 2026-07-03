@@ -1,0 +1,93 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "confirm": "Confirm",
+    "search": "Search",
+    "noResults": "No results found",
+    "pullToRefresh": "Pull to refresh",
+    "send": "Send",
+    "close": "Close",
+    "downloading": "Downloading file..."
+  },
+  "auth": {
+    "serverUrl": "Server URL",
+    "serverUrlPlaceholder": "https://planka.example.com",
+    "serverUrlHint": "Enter the URL of your Planka instance",
+    "connect": "Connect",
+    "login": "Login",
+    "email": "Email or Username",
+    "emailPlaceholder": "your@email.com",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "loginButton": "Sign In",
+    "loggingIn": "Signing in...",
+    "loginError": "Login failed. Please check your credentials.",
+    "logout": "Logout",
+    "connectionError": "Could not connect to server",
+    "invalidUrl": "Please enter a valid URL"
+  },
+  "projects": {
+    "title": "Projects",
+    "noProjects": "No projects yet",
+    "noProjectsDesc": "Projects you have access to will appear here",
+    "boards": "{{count}} board",
+    "boards_other": "{{count}} boards"
+  },
+  "board": {
+    "title": "Board",
+    "addCard": "Add card...",
+    "addList": "Add list",
+    "newListName": "New list name",
+    "emptyList": "No cards in this list",
+    "createCard": "Create card"
+  },
+  "card": {
+    "description": "Description",
+    "descriptionPlaceholder": "Add a more detailed description...",
+    "labels": "Labels",
+    "members": "Members",
+    "dueDate": "Due Date",
+    "dueDateNone": "No due date",
+    "stopwatch": "Stopwatch",
+    "checklists": "Checklists",
+    "comments": "Comments",
+    "attachments": "Attachments",
+    "actions": "Activity",
+    "noDescription": "No description",
+    "addComment": "Write a comment...",
+    "taskProgress": "{{completed}}/{{total}}",
+    "noAttachments": "No attachments yet",
+    "newChecklistName": "Checklist name...",
+    "addTaskPlaceholder": "Task name...",
+    "addChecklistItem": "+ Add an item",
+    "makeCover": "Set Cover",
+    "removeCover": "Remove Cover",
+    "systemUser": "System",
+    "unknownUser": "Unknown User",
+    "image": "Image",
+    "file": "File"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "empty": "No notifications",
+    "emptyDesc": "You're all caught up!",
+    "markAllRead": "Mark all as read"
+  },
+  "profile": {
+    "title": "Profile",
+    "settings": "Settings",
+    "theme": "Theme",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "language": "Language",
+    "serverInfo": "Server",
+    "version": "Version"
+  }
+}

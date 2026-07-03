@@ -1,0 +1,93 @@
+{
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "retry": "Tentar novamente",
+    "cancel": "Cancelar",
+    "save": "Salvar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "create": "Criar",
+    "confirm": "Confirmar",
+    "search": "Buscar",
+    "noResults": "Nenhum resultado encontrado",
+    "pullToRefresh": "Puxe para atualizar",
+    "send": "Enviar",
+    "close": "Fechar",
+    "downloading": "Baixando arquivo..."
+  },
+  "auth": {
+    "serverUrl": "URL do Servidor",
+    "serverUrlPlaceholder": "https://planka.exemplo.com",
+    "serverUrlHint": "Informe a URL da sua instância Planka",
+    "connect": "Conectar",
+    "login": "Entrar",
+    "email": "Email ou Usuário",
+    "emailPlaceholder": "seu@email.com",
+    "password": "Senha",
+    "passwordPlaceholder": "Digite sua senha",
+    "loginButton": "Entrar",
+    "loggingIn": "Entrando...",
+    "loginError": "Falha no login. Verifique suas credenciais.",
+    "logout": "Sair",
+    "connectionError": "Não foi possível conectar ao servidor",
+    "invalidUrl": "Informe uma URL válida"
+  },
+  "projects": {
+    "title": "Projetos",
+    "noProjects": "Nenhum projeto ainda",
+    "noProjectsDesc": "Projetos que você tem acesso aparecerão aqui",
+    "boards": "{{count}} board",
+    "boards_other": "{{count}} boards"
+  },
+  "board": {
+    "title": "Board",
+    "addCard": "Adicionar card...",
+    "addList": "Adicionar lista",
+    "newListName": "Nome da nova lista",
+    "emptyList": "Nenhum card nesta lista",
+    "createCard": "Criar card"
+  },
+  "card": {
+    "description": "Descrição",
+    "descriptionPlaceholder": "Adicione uma descrição mais detalhada...",
+    "labels": "Etiquetas",
+    "members": "Membros",
+    "dueDate": "Data de Entrega",
+    "dueDateNone": "Sem data de entrega",
+    "stopwatch": "Cronômetro",
+    "checklists": "Checklists",
+    "comments": "Comentários",
+    "attachments": "Anexos",
+    "actions": "Atividade",
+    "noDescription": "Sem descrição",
+    "addComment": "Escreva um comentário...",
+    "taskProgress": "{{completed}}/{{total}}",
+    "noAttachments": "Nenhum anexo ainda",
+    "newChecklistName": "Nome do checklist...",
+    "addTaskPlaceholder": "Nome da tarefa...",
+    "addChecklistItem": "+ Adicionar um item",
+    "makeCover": "Definir Capa",
+    "removeCover": "Remover Capa",
+    "systemUser": "Sistema",
+    "unknownUser": "Usuário Desconhecido",
+    "image": "Imagem",
+    "file": "Arquivo"
+  },
+  "notifications": {
+    "title": "Notificações",
+    "empty": "Sem notificações",
+    "emptyDesc": "Tudo em dia!",
+    "markAllRead": "Marcar todas como lidas"
+  },
+  "profile": {
+    "title": "Perfil",
+    "settings": "Configurações",
+    "theme": "Tema",
+    "darkMode": "Modo Escuro",
+    "lightMode": "Modo Claro",
+    "language": "Idioma",
+    "serverInfo": "Servidor",
+    "version": "Versão"
+  }
+}
