@@ -60,7 +60,6 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     set({ isBootstrapping: true });
     try {
       const data = await getBootstrap();
-      console.log({data});
 
       const token = await getStoredToken();
       let currentUser: User | undefined = undefined;

@@ -116,10 +116,7 @@ export default function CardDetailScreen() {
   const coverAttachment = useMemo(() => {
     if (!card || !card.coverAttachmentId) return null;
     return cardAttachments.find((a) => a.id === card.coverAttachmentId) || null;
-  }, [card, cardAttachments]);
-
-  console.log({coverAttachment, card: JSON.stringify(card), thumbnailUrls: JSON.stringify(coverAttachment?.data.thumbnailUrls)});
-  
+  }, [card, cardAttachments]);  
 
   // Edit States
   const [name, setName] = useState('');
@@ -391,10 +388,7 @@ export default function CardDetailScreen() {
       minutes.toString().padStart(2, '0'),
       secs.toString().padStart(2, '0'),
     ].join(':');
-  };
-
-  console.log({coverAttachment, serverUrl, authToken});
-  
+  };  
 
   return (
     <KeyboardAvoidingView
@@ -644,8 +638,6 @@ export default function CardDetailScreen() {
                     <TouchableOpacity
                       style={{ flexDirection: 'row', flex: 1, alignItems: 'center', gap: spacing.md }}
                       onPress={() => {
-                        console.log({ imageUrl, URL: att.data.url }, '\n\n\n');
-
                         if (imageUrl) {
                           setSelectedViewerImage(imageUrl);
                         } else {
@@ -898,8 +890,6 @@ export default function CardDetailScreen() {
           <View style={{ gap: spacing.md, marginTop: spacing.sm }}>
             {cardComments.map((comment) => {
               const author = getUserById(comment.userId);
-
-              console.log({currentUserId: currentUser?.id, commentUserId: comment.userId, editingCommentId, commentId: comment.id});
               
               return (
                 <View key={comment.id} style={styles.commentCard}>

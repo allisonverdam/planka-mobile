@@ -345,10 +345,7 @@ export default function BoardScreen() {
 
   // Filter to only show active lists
   // const activeLists = lists.filter((l) => l.type === 'active' || !l.type);
-  const activeLists = lists.filter((l) => ['active', 'closed'].includes(l.type) || !l.type);
-
-  console.log(lists.map(item => item.type).join(','));
-  
+  const activeLists = lists.filter((l) => ['active', 'closed'].includes(l.type) || !l.type);  
 
   if (isLoading && !board) {
     return (
