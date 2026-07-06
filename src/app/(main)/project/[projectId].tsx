@@ -1,28 +1,29 @@
 // Planka Mobile — Project Detail Screen (Board Selection)
 
-import { useEffect, useCallback } from 'react';
-import {
-  View,
-  Text,
-  FlatList,
-  TouchableOpacity,
-  StyleSheet,
-} from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import {
+  FlatList,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import Animated, { FadeInDown } from 'react-native-reanimated';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { useTheme } from '@/hooks/useTheme';
 import { useProjectStore } from '@/stores/projectStore';
-import { spacing, borderRadius } from '@/theme';
+import { borderRadius, spacing } from '@/theme';
 import { typography } from '@/theme/typography';
 import type { Board } from '@/types/models';
+import { useTranslation } from 'react-i18next';
 
 export default function ProjectDetailScreen() {
   const { projectId } = useLocalSearchParams<{ projectId: string }>();
   const router = useRouter();
   const { colors, brand } = useTheme();
   const insets = useSafeAreaInsets();
+  const { t } = useTranslation();
 
   const projects = useProjectStore((s) => s.projects);
   const getBoardsForProject = useProjectStore((s) => s.getBoardsForProject);
@@ -39,7 +40,7 @@ export default function ProjectDetailScreen() {
       {/* Header */}
       <View style={[styles.header, { paddingTop: insets.top + spacing.sm }]}>
         <TouchableOpacity onPress={() => router.back()} style={styles.backButton}>
-          <Text style={[{ color: brand.primary }, typography.bodyLarge]}>← Back</Text>
+          <Text style={[{ color: brand.primary }, typography.bodyLarge]}>← {t('common.back')}</Text>
         </TouchableOpacity>
         <Text style={[styles.headerTitle, { color: colors.text }, typography.h2]} numberOfLines={1}>
           {project?.name ?? 'Project'}

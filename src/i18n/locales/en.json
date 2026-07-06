@@ -14,7 +14,8 @@
     "pullToRefresh": "Pull to refresh",
     "send": "Send",
     "close": "Close",
-    "downloading": "Downloading file..."
+    "downloading": "Downloading file...",
+    "back": "Back"
   },
   "auth": {
     "serverUrl": "Server URL",

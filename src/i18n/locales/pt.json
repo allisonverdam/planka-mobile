@@ -14,7 +14,8 @@
     "pullToRefresh": "Puxe para atualizar",
     "send": "Enviar",
     "close": "Fechar",
-    "downloading": "Baixando arquivo..."
+    "downloading": "Baixando arquivo...",
+    "back": "Voltar"
   },
   "auth": {
     "serverUrl": "URL do Servidor",
