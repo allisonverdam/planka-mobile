@@ -36,11 +36,13 @@ function BoardCard({
   labels,
   memberCount,
   onPress,
+  isClosed,
 }: {
   card: Card;
   labels: Label[];
   memberCount: number;
   onPress: () => void;
+  isClosed?: boolean;
 }) {
   const { colors } = useTheme();
   const attachments = useBoardStore((s) => s.attachments);
@@ -97,7 +99,15 @@ function BoardCard({
         )}
 
         {/* Card name */}
-        <Text style={[styles.cardName, { color: colors.text }, typography.body]} numberOfLines={3}>
+        <Text
+          style={[
+            styles.cardName,
+            { color: isClosed ? colors.textSecondary : colors.text },
+            isClosed && { textDecorationLine: 'line-through' },
+            typography.body
+          ]}
+          numberOfLines={3}
+        >
           {card.name}
         </Text>
 
@@ -219,6 +229,7 @@ function BoardColumn({
             labels={getLabelsForCard(item.id)}
             memberCount={getMemberCount(item.id)}
             onPress={() => onCardPress(item.id)}
+            isClosed={list.type === 'closed'}
           />
         )}
       />
