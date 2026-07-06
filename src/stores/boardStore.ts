@@ -132,7 +132,7 @@ export const useBoardStore = create<BoardState>((set, get) => ({
 
   getCardsForList: (listId: string) => {
     return get()
-      .cards.filter((c) => c.listId === listId && !c.isClosed)
+      .cards.filter((c) => c.listId === listId)
       .sort((a, b) => (a.position ?? 0) - (b.position ?? 0));
   },
 

@@ -1,34 +1,31 @@
 // Planka Mobile — Board Kanban View
 // The main board screen with horizontal-scrolling columns and vertical card lists
 
-import { useEffect, useState, useCallback, useMemo, useRef } from 'react';
+import { useLocalSearchParams, useRouter } from 'expo-router';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import {
-  View,
-  Text,
-  FlatList,
-  ScrollView,
-  TouchableOpacity,
-  TextInput,
-  StyleSheet,
   ActivityIndicator,
   Dimensions,
-  RefreshControl,
-  KeyboardAvoidingView,
-  Platform,
+  FlatList,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View
 } from 'react-native';
-import { useLocalSearchParams, useRouter } from 'expo-router';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { useTranslation } from 'react-i18next';
 import Animated, { FadeIn } from 'react-native-reanimated';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { getStoredToken } from '@/api/client';
 import { useTheme } from '@/hooks/useTheme';
 import { useBoardStore } from '@/stores/boardStore';
 import { useSettingsStore } from '@/stores/settingsStore';
-import { getStoredToken } from '@/api/client';
-import { Image } from 'expo-image';
-import { spacing, borderRadius } from '@/theme';
+import { borderRadius, spacing } from '@/theme';
 import { typography } from '@/theme/typography';
 import type { Card, Label, List } from '@/types/models';
+import { Image } from 'expo-image';
 
 const COLUMN_WIDTH = Dimensions.get('window').width * 0.78;
 const COLUMN_MARGIN = spacing.sm;
@@ -336,7 +333,11 @@ export default function BoardScreen() {
   );
 
   // Filter to only show active lists
-  const activeLists = lists.filter((l) => l.type === 'active' || !l.type);
+  // const activeLists = lists.filter((l) => l.type === 'active' || !l.type);
+  const activeLists = lists.filter((l) => ['active', 'closed'].includes(l.type) || !l.type);
+
+  console.log(lists.map(item => item.type).join(','));
+  
 
   if (isLoading && !board) {
     return (
